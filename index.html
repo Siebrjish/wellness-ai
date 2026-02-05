@@ -84,6 +84,91 @@ p {
   margin: 5px;
 }
 </style>
+/* High-tech neon background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #00ffea;
+  text-align: center;
+  overflow: hidden;
+  background: #000; /* solid black base */
+}
+
+/* Animated neon grid lines */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0,255,234,0.1),
+    rgba(0,255,234,0.1) 1px,
+    transparent 1px,
+    transparent 20px
+  );
+  animation: moveGrid 15s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveGrid {
+  0% { transform: translate(0,0) rotate(0deg); }
+  50% { transform: translate(-50px,50px) rotate(10deg); }
+  100% { transform: translate(0,0) rotate(0deg); }
+}
+
+/* Chatbox styling */
+#chatbox {
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent so background shows */
+  border: 2px solid #00ffea;
+  padding: 20px;
+  height: 300px;
+  width: 450px;
+  margin: 50px auto;
+  overflow-y: scroll;
+  border-radius: 15px;
+  box-shadow: 0 0 30px #00ffea;
+}
+
+/* Input box and button */
+#userInput {
+  width: 320px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #00ffea;
+  background: rgba(0,0,0,0.8);
+  color: #00ffea;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid #00ffea;
+  background: #000;
+  color: #00ffea;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffea;
+}
+
+button:hover {
+  background: #00ffea;
+  color: black;
+  box-shadow: 0 0 20px #00ffea;
+}
+
+h1 {
+  margin-top: 30px;
+  color: #00ffea;
+  text-shadow: 0 0 15px #00ffea;
+}
+
+p {
+  text-align: left;
+  margin: 5px;
+}
 
   </style>
 </head>
@@ -138,4 +223,5 @@ p {
   </script>
 </body>
 </html>
+
 
