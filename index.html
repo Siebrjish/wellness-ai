@@ -3,11 +3,88 @@
 <head>
   <title>Wellness.ai</title>
   <style>
-    body { font-family: Arial; background: #f0f0f0; text-align: center; }
-    #chatbox { border: 1px solid #ccc; padding: 10px; height: 300px; width: 400px; margin: auto; overflow-y: scroll; background: white; }
-    #userInput { width: 300px; padding: 5px; }
-    button { padding: 5px 10px; }
-    p { text-align: left; margin: 5px; }
+    <style>
+/* High-tech futuristic background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #00ffea;
+  text-align: center;
+  overflow: hidden;
+  background: black;
+}
+
+/* Animated moving gradient lines */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #00ffea, #0080ff, #ff00ff);
+  background-size: 300% 300%;
+  animation: moveBackground 10s linear infinite;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+@keyframes moveBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Chatbox styling */
+#chatbox {
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid #00ffea;
+  padding: 20px;
+  height: 300px;
+  width: 450px;
+  margin: 50px auto;
+  overflow-y: scroll;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ffea;
+}
+
+/* Input box and button */
+#userInput {
+  width: 320px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #00ffea;
+  background: black;
+  color: #00ffea;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid #00ffea;
+  background: #000;
+  color: #00ffea;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00ffea;
+  color: black;
+}
+
+h1 {
+  margin-top: 30px;
+  color: #00ffea;
+  text-shadow: 0 0 10px #00ffea;
+}
+
+p {
+  text-align: left;
+  margin: 5px;
+}
+</style>
+
   </style>
 </head>
 <body>
@@ -61,3 +138,4 @@
   </script>
 </body>
 </html>
+
